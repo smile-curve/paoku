@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>酷跑游戏</title>
+	<script src="js/hitPix.js"></script>
+	<script src="js/game1.js"></script>
+	<script src="js/run.js"></script>
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="css/run.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	<audio src="audio/run.wav" class="runA" loop></audio>
+	<audio src="audio/jump.wav" class="jumpA"></audio>
+	<audio src="audio/pengzhang.wav" class="hitA"></audio>
+	<audio src="audio/hit.wav" class="zidanA"></audio>
+	<canvas></canvas>
+<!--人机交互 障碍物 像素街碰撞 流血(粒子流) -->
+	<div class="start">
+		<div class="welcome text-center">超级酷跑</div>
+		<button type="button" class="btn btn-success">开始游戏</button>
+	</div>
+	<div class="over">
+		<div class="welcome text-center">
+			GAME OVER! 当前分数：<span class="scoreEle">0</span>
+		</div>
+		<ul>
+			
+		</ul>
+		<button type="button" class="again btn btn-success">再来一次</button>
+	</div>
+	<div class="mask"></div>
+	<!--人跑的状态-->
+	<img src="img/run1.png" alt="" class="run" hidden>
+	<img src="img/run2.png" alt="" class="run" hidden>
+	<img src="img/run3.png" alt="" class="run" hidden>
+	<img src="img/run4.png" alt="" class="run" hidden>
+	<img src="img/run5.png" alt="" class="run" hidden>
+	<img src="img/run6.png" alt="" class="run" hidden>
+	<img src="img/run7.png" alt="" class="run" hidden>
+	<img src="img/run8.png" alt="" class="run" hidden>
+	<!--障碍物-->
+	<img src="img/z1.png" alt="" class="hinder" hidden>
+	<img src="img/z6.png" alt="" class="hinder" hidden>
+	<img src="img/z3.png" alt="" class="hinder" hidden>
+	<img src="img/z4.png" alt="" class="hinder" hidden>
+	<img src="img/z5.png" alt="" class="hinder" hidden>
+	<img src="img/z6.png" alt="" class="hinder" hidden>
+	<img src="img/z7.png" alt="" class="hinder" hidden>
+	<img src="img/z8.png" alt="" class="hinder" hidden>
+	<!--人跳的状态-->
+	<img src="img/jump.png" alt="" class="jump" hidden>
+
+	<div class="border one">
+		<span>生命值：</span>
+		<span class="lifes">3</span>
+	</div>
+	<div class="border two">
+		<span>分数：</span>
+		<span class="scores">0</span>
+	</div>
+
+</body>
+</html>

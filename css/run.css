@@ -1,0 +1,105 @@
+html,body{
+	width: 100%;height: 100%;
+	background: #000;
+	overflow: hidden;
+	padding: 0;margin: 0;
+}
+ul,li{
+	padding: 0;margin: 0;
+	list-style: none;
+}
+canvas{
+	background: url("../img/back1.jpg") repeat-x;
+	background-size: 80% 80%;
+}
+.start, .over{
+	width: 30%;height: 40%;
+	position: fixed;
+	left: 0;top: 0;right: 0;bottom: 0;
+	margin: auto;
+	border: 3px solid #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #000;
+	z-index: 1;
+	animation:start 2s ease forwards;
+	text-align: center;
+}
+div.over{
+	animation:null;
+	transform:translate(0px,-1000px);
+}
+.mask{
+	width: 100%;height: 100%;
+	position: absolute;
+	left: 0;top: 0;
+	background: rgba(0,0,0,0.5);
+	animation:mask 2s ease forwards;
+}
+.welcome{
+	line-height: 150px;
+	font-size: 30px;
+	color: #fff;
+}
+.over .welcome{
+	line-height: 100px;
+}
+.over .welcome{
+	font-size: 30px;
+	color: #fff;
+}
+@keyframes start{
+	0%{
+		transform:translate(0px,-1000px);
+	}
+	100%{
+		transform:translate(0px,0px);
+	}
+}
+@keyframes start1{
+	0%{
+		transform:translate(0px,0px);
+	}
+	100%{
+		transform:translate(0px,-1000px);
+	}
+}
+@keyframes mask{
+	0%{
+		background: rgba(0,0,0,0.2);
+	}
+	100%{
+		background: rgba(0,0,0,0.6);
+	}
+}
+@keyframes mask1{
+	0%{
+		background: rgba(0,0,0,0.6);
+	}
+	100%{
+		background: rgba(0,0,0,0);
+	}
+}
+.over ul{
+	color: #fff;
+	font-size: 18px;
+}
+
+.border{
+	width: 200px;
+	height: 100px;
+	background: red;
+	position: fixed;
+	bottom: 20px;
+	text-align: center;
+	line-height: 100px;
+	color: red;
+	font-weight: bold;
+}
+.one{
+	left: 200px;
+	background: url(../img/border.png);
+}
+.two{
+	right: 200px;
+	background: url(../img/border.png);
+}
